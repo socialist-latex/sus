@@ -8,9 +8,11 @@
             pdfauthor={Friedrich Engels},
             pdftitle={Socialism: Utopian and Scientific},
             pdfsubject={Socialism},
-            pdfproducer={latex with hyperref},
             pdfkeywords={socialism, scientific, utopian, engels},
-            pdfcreator={pdflatex}]{hyperref}
+            pdfproducer={latex with hyperref},
+            pdfcreator={pdflatex},
+            colorlinks=true,
+            bookmarksnumbered=true]{hyperref}
 
 \counterwithin*{endnote}{chapter}
 
@@ -24,7 +26,9 @@
 
 \tableofcontents
 
+% TODO add introductions
 \include{tex/utopian-socialism}
 \include{tex/dialectics}
+\include{tex/historical-materialism}
 
 \end{document}
