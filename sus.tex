@@ -2,8 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 % endnotes does not support hyperlinks so I replaced it with enotez.
-% TODO remove lipsum when finished with it
-\usepackage{enotez, chngcntr, lipsum}
+\usepackage{enotez, chngcntr}
 
 \usepackage[pdftex,
             pdfauthor={Friedrich Engels},
@@ -15,6 +14,7 @@
             colorlinks=true,
             bookmarksnumbered=true]{hyperref}
 
+\renewcommand{\theendnote}{\Roman{endnote}}
 \counterwithin*{endnote}{chapter}
 
 \title{Socialism: Utopian and Scientific}
