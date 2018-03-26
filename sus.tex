@@ -2,7 +2,8 @@
 \usepackage[utf8]{inputenc}
 
 % endnotes does not support hyperlinks so I replaced it with enotez.
-\usepackage{enotez, chngcntr}
+% TODO remove lipsum when finished with it
+\usepackage{enotez, chngcntr, lipsum}
 
 \usepackage[pdftex,
             pdfauthor={Friedrich Engels},
@@ -23,9 +24,12 @@
 \begin{document}
   \maketitle
 
+  \frontmatter
   \tableofcontents
 
-  % TODO add introductions
+  \include{tex/intros/general}
+
+  \mainmatter
   \include{tex/utopian-socialism}
   \include{tex/dialectics}
   \include{tex/historical-materialism}
