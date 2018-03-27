@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 % endnotes does not support hyperlinks so I replaced it with enotez.
-\usepackage{enotez, chngcntr}
+\usepackage{enotez, chngcntr, enumitem}
 
 \usepackage[pdftex,
             pdfauthor={Friedrich Engels},
@@ -11,8 +11,7 @@
             pdfkeywords={socialism, scientific, utopian, engels},
             pdfproducer={latex with hyperref},
             pdfcreator={pdflatex},
-            colorlinks=true,
-            bookmarksnumbered=true]{hyperref}
+            colorlinks=true]{hyperref}
 
 \renewcommand{\theendnote}{\Roman{endnote}}
 \counterwithin*{endnote}{chapter}
@@ -28,6 +27,7 @@
   \tableofcontents
 
   \include{tex/intros/general}
+  \include{tex/intros/english-history}
 
   \mainmatter
   \include{tex/utopian-socialism}
